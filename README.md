@@ -24,12 +24,14 @@ A simple educational project built with FastAPI implementing user registration, 
 2. Install dependencies:
 ```bash
   pip install -r requirements.txt
-``` 
-3. Run the application:
+```
+3. Create file static and file avatars in it
+   
+4. Run the application:
 ```bash
    uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ``` 
-4. Open your browser and go to the link that was given to you
+5. Open your browser and go to the link that was given to you
 
    
 ##  Project Structure
@@ -37,6 +39,8 @@ A simple educational project built with FastAPI implementing user registration, 
 recipes-app/
 │
 ├── static/                # Static files (CSS, images, avatars)
+│   ├── avatars/
+│         ├── # Your photo will be created here
 ├── templates/             # Jinja2 templates
 │   ├── base.html          
 │   ├── login.html          
