@@ -18,6 +18,7 @@ def profile(request: Request, user: UserSchema = Depends(get_current_user)):
         return RedirectResponse(url = '/login')
     return templates.TemplateResponse("profile.html", {"request": request, "user": user})
 
+@router.post('/profile/avatar')
 def upload_avatar(
     request: Request,
     user: UserSchema = Depends(get_current_user),
