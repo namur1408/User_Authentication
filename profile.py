@@ -10,7 +10,7 @@ from schemas import UserSchema
 from templates import templates
 
 router = APIRouter()
-AVATAR_DIR = 'stativ/avatars'
+AVATAR_DIR = 'static/avatars'
 
 @router.get('/profile')
 def profile(request: Request, user: UserSchema = Depends(get_current_user)):
